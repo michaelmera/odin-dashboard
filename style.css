@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+
+    grid-template: 1fr 2fr 2fr / 1fr 4fr 1fr;
+}
+
+nav {
+    grid-column: span 1;
+    grid-row: span 3;
+}
+
+header {
+    grid-column: span 2;
+}
+
+main {
+    grid-row: span 2;
+}
+
+aside {
+    grid-column: 3 span 1;
+}
